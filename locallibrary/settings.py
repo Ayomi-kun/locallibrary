@@ -24,7 +24,7 @@ SECRET_KEY = 'lp_dfy%d@u=#u*mu3d^1!z_2=jup4l877!14$5!plgzhanx6hs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# turn this off when going to production or deployment
+# turn this off when going to production(deployment as this can be used by hackers)
 
 ALLOWED_HOSTS = []
 
