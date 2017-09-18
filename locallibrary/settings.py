@@ -24,6 +24,7 @@ SECRET_KEY = 'lp_dfy%d@u=#u*mu3d^1!z_2=jup4l877!14$5!plgzhanx6hs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# turn this off when going to production or deployment
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'catalog.apps.CatalogConfig',
 ]
 
 MIDDLEWARE = [
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Lagos'
 
 USE_I18N = True
 

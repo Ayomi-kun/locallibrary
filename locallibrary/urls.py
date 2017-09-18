@@ -19,3 +19,10 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
+
+# use include() to add URLS from the catalog application
+from django.conf.urls import include 
+
+urlpatterns += [
+    url(r'^catalog/', include('catalog.urls')),
+]
