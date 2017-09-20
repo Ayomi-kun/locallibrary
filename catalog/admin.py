@@ -21,13 +21,15 @@ class AuthorAdmin(admin.ModelAdmin):
 admin.site.register(Author, AuthorAdmin)
 
 # Register the Admin classes for Book using the decorator
-
+class BooksInstanceInline(admin.TabularInline):
+    model = BookInstance
+    
 @admin.register(Book)
 #note @admin.reister() does the same thing as admin.site.register
 class BookAdmin(admin.ModelAdmin):
     #genre cannot be called in the below tuples because genre is a many to many field
     list_display = ('title', 'author', 'display_genre')
-
+    inlines = [BooksInstanceInline]
 # Register the Admin classes for BookInstance using the decorator
 
 @admin.register(BookInstance) 
