@@ -9,7 +9,7 @@ class Genre(models.Model):
     
     def __str__(self):
         """
-        String for representing the Model object (in Admin site etc.)
+        String for representing the Model object (in the Admin site etc.)
         """
         return self.name
 
